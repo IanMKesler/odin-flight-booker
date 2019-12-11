@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_airport: one
+  finish_airport: one
+  start: 2019-12-11 09:48:16
+  duration: 1.5
+
+two:
+  start_airport: two
+  finish_airport: two
+  start: 2019-12-11 09:48:16
+  duration: 1.5

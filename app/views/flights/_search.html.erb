@@ -1,0 +1,15 @@
+<%= form_with(url: yield(:url), method: "get") do |f| %>
+    <%= f.label :from %>
+    <%= f.select :from, options_for_select(@airport_codes) %>
+
+    <%= f.label :to %>
+    <%= f.select :to, options_for_select(@airport_codes) %></br>
+
+    <% f.label :passengers, "Number of passengers" %>
+    <%= f.select :passengers, options_for_select(@passenger_options) %></br>
+
+    <% f.label :start, "Flight date" %>
+    <%= f.select :start, options_for_select(@datetime_options) %></br>
+
+    <%= f.submit "Search" %>
+<% end %>
