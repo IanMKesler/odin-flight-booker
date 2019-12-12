@@ -1,16 +1,16 @@
 <% provide(:url, flights_index_path) %>
 <h1>Flights</h1>
 <div>
-    <%= render 'search' %> 
-    
+    <%= render 'search' %>     
 </div>
 
 <div>
     <% if @flights %>
     <h1>Should be rendering flights </h1>
         <ul>
-        <%= form_with do |f|%>
+        <%= form_with model: @booking, url: new_bookings_path, method: :get, local: true do |f|%>
             <%= render @flights, f: f %>
+            <%= f.submit "Proceed to Booking" %>
         <% end %>
         </ul>
     <% end %>

@@ -1,0 +1,7 @@
+<h1>New Booking</h1>
+<h2><%= "#{@flight.from_airport.code} to #{@flight.to_airport.code}" %></h2>
+<h3><%= "Departure: #{@flight.date_formatted} #{@flight.time_formatted}" %></h3>
+<div>
+    <%= render 'form' %>
+</div>
+
