@@ -1,0 +1,10 @@
+Thanks for booking with us, <%= @passenger.name %>
+===============================================
+ 
+You have successfully booked your flight,
+<%= @booking.flight.from_airport.code %> to <%= @booking.flight.to_airport.code %>
+Departing <%= @booking.flight.time_formatted %>, on <%= @booking.flight.date_formatted %>.
+ 
+To visit the booking page, please visit <%= @booking_url %>.
+ 
+Thanks again for booking with us and enjoy your day!
